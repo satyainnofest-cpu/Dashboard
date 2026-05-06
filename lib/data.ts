@@ -8,19 +8,19 @@ import type {
 } from "./types";
 
 export const site: SiteMeta = {
-  name: "Aarav Sharma",
+  name: "Dev Jindal",
   age: 14,
-  location: "Bengaluru, India",
+  location: "Gurugram, India",
   tagline: "Impact through Innovation",
   mission:
     "I'm a 14-year-old student building small, honest AI tools for problems I can see — climate, health, education, community. The goal isn't a demo. It's a thing that helps one real person, then a thousand.",
-  url: "https://aarav.example.com",
+  url: "https://devjindal.me",
   description:
-    "Portfolio of Aarav Sharma — Grade 9 student in Bengaluru building AI for Good projects across climate, health, education, and community.",
+    "Portfolio of Dev Jindal — Grade 9 student in Gurugram building AI for Good projects across climate, health, education, and community.",
   contact: {
-    email: "hello@example.com",
-    github: "aarav-ai",
-    linkedin: "aarav-sharma-ai",
+    email: "dev@devjindal.me",
+    github: "devjindal",
+    linkedin: "dev-jindal",
   },
 };
 

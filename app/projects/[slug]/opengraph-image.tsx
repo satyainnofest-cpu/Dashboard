@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getProject, projects } from "@/lib/data";
+import { getProject, projects, site } from "@/lib/data";
 
 export const runtime = "nodejs";
 export const size = { width: 1200, height: 630 };
@@ -106,7 +106,7 @@ export default async function Image({
           }}
         >
           <span style={{ color: "#c5f73b" }}>—</span>
-          <span>aarav sharma · grade 9 · india</span>
+          <span>{site.name.toLowerCase()} · grade 9 · india</span>
         </div>
       </div>
     ),

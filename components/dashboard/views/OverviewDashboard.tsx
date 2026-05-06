@@ -6,10 +6,8 @@ import { ArrowUpRight } from "lucide-react";
 import { DashboardShell, PanelGrid } from "@/components/dashboard/DashboardShell";
 import { Panel } from "@/components/dashboard/Panel";
 import { KPIGrid, type KPIProps } from "@/components/dashboard/KPITile";
-import {
-  type ImpactStat,
-  type Project,
-} from "@/lib/types";
+import { type ImpactStat, type Project } from "@/lib/types";
+import { site } from "@/lib/data";
 import { StatusPill } from "@/components/ui/StatusPill";
 import { Sparkline } from "@/components/charts/Sparkline";
 import { DataTable, type Column } from "@/components/dashboard/DataTable";
@@ -209,7 +207,7 @@ export function OverviewDashboard({
   return (
     <DashboardShell
       eyebrow="// dashboard / overview"
-      title="Aarav · AI for Good"
+      title={`${site.name.split(" ")[0]} · AI for Good`}
       meta={
         <>
           <span>refreshed {new Date().toLocaleDateString("en", { month: "short", day: "numeric", year: "numeric" })}</span>

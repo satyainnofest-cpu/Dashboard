@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { adjacentProjects, getProject, projects } from "@/lib/data";
+import { adjacentProjects, getProject, projects, site } from "@/lib/data";
 import { ProjectDrilldown } from "@/components/dashboard/views/ProjectDrilldown";
 import { JsonLd } from "@/components/JsonLd";
 
@@ -48,7 +48,7 @@ export default async function ProjectPage({
     description: project.tagline,
     about: project.domain,
     keywords: project.tech.join(", "),
-    creator: { "@type": "Person", name: "Aarav Sharma" },
+    creator: { "@type": "Person", name: site.name },
     inLanguage: "en",
   };
 

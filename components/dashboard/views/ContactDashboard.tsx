@@ -14,12 +14,14 @@ export function ContactDashboard({
   linkedin,
   openTo,
   name,
+  location,
 }: {
   email: string;
   github: string;
   linkedin: string;
   openTo: string[];
   name: string;
+  location: string;
 }) {
   const kpis: KPIProps[] = [
     {
@@ -63,7 +65,7 @@ export function ContactDashboard({
         <>
           <span>{name}</span>
           <span>·</span>
-          <span>Bengaluru, India</span>
+          <span>{location}</span>
           <span>·</span>
           <span className="text-lime">accepting messages</span>
         </>

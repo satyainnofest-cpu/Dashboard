@@ -19,6 +19,7 @@ export default function ContactPage() {
       linkedin={site.contact.linkedin}
       openTo={openTo}
       name={site.name}
+      location={site.location}
     />
   );
 }

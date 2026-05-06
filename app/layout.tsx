@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   keywords: [
     "AI for Good",
     "Impact through Innovation",
-    "Aarav Sharma",
+    site.name,
     "AI portfolio",
     "Indian student AI",
     "edge ML",
@@ -75,7 +75,7 @@ const personJsonLd = {
   address: {
     "@type": "PostalAddress",
     addressCountry: "IN",
-    addressLocality: "Bengaluru",
+    addressLocality: site.location.split(",")[0].trim(),
   },
 };
 

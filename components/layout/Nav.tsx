@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { motion, useScroll, useSpring, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Command, Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/data";
+import { navLinks, site } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export function Nav() {
@@ -53,7 +53,9 @@ export function Nav() {
               <span className="inline-flex h-5 w-5 items-center justify-center rounded-sm bg-lime font-bold text-[10px] text-black">
                 AI
               </span>
-              <span className="text-white/85">aarav.ai</span>
+              <span className="text-white/85">
+                {site.name.split(" ")[0].toLowerCase()}.ai
+              </span>
               <span className="text-white/30 hidden sm:inline">/ dashboard</span>
             </Link>
             <ul className="hidden items-center gap-1 md:flex">

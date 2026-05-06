@@ -1,6 +1,6 @@
 # AI for Good — Portfolio
 
-A multi-page Next.js portfolio for **Aarav Sharma**, a Grade 9 student in Bengaluru, presenting AI-for-Good projects under the theme *Impact through Innovation*.
+A multi-page Next.js portfolio for **Dev Jindal**, a Grade 9 student in Gurugram, presenting AI-for-Good projects under the theme *Impact through Innovation*.
 
 The site is editorial in feel (Linear / Vercel / Anthropic) but **product** in behaviour: every filter works, every slider updates charts live, `Cmd+K` opens a search palette, page transitions are smooth, and Lighthouse stays in the high 90s.
 
